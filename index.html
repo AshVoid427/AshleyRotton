@@ -3,10 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley's Website</title>
+    <title>Ashley's Personal Promotion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 40px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .about {
+            margin: 40px 0;
+        }
+        .about h2 {
+            margin-bottom: 20px;
+        }
+        .contact {
+            margin: 40px 0;
+        }
+        footer {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        .btn {
+            text-decoration: none;
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Ashley's Website</h1>
-    <p>This is my first website created with GitHub Pages!</p>
+    <header>
+        <h1>Hi, I'm Ashley Rotton</h1>
+        <p>Data Science Student & Aspiring Data Analyst</p>
+    </header>
+    
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm currently studying Data Science and Analytics with a Business Concentration at Florida Atlantic University. I love finding insights in data, building predictive models, and solving problems through analytics.</p>
+        </section>
+        
+        <section class="projects">
+            <h2>My Projects</h2>
+            <p>Check out some of my projects on GitHub:</p>
+            <a class="btn" href="https://github.com/AshVoid427" target="_blank">My GitHub</a>
+        </section>
+        
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to email me:</p>
+            <a class="btn" href="mailto:ashley.rotton@example.com">Email Me</a>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/ashleyrotton" target="_blank" style="color: #fff;">LinkedIn</a></p>
+    </footer>
 </body>
 </html>
