@@ -1,2 +1,8 @@
 # Welcome to Ashley's Website
-This is a simple website created using GitHub Pages and a built-in Jekyll theme.
+This is a simple website built with GitHub Pages and Jekyll.
+
+## About Me
+I'm Ashley, a Data Science student at FAU.
+
+## Blog Posts
+Here, I share my experiences and projects.
