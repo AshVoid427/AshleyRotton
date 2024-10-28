@@ -1,121 +1,216 @@
-/* General Styles */
-body {
-    font-family: 'Arial, sans-serif';
-    line-height: 1.6;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Header Styles */
-header {
-    background-color: rgba(0, 49, 83, 0.9); /* Prussian blue with transparency */
-    padding: 10px 20px;
-    overflow: hidden;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Rotton's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles for Responsive Design */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-}
+        header {
+            background-color: #000000;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
 
-nav a {
-    text-decoration: none;
-    color: #b0e0e6; /* Light blue */
-    font-weight: bold;
-    transition: color 0.3s;
-}
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
 
-nav a:hover {
-    color: #ff69b4; /* Pink for hover effect */
-}
+        nav ul li {
+            position: relative;
+        }
 
-/* Main Content Styles */
-main {
-    flex: 1;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    margin: 20px auto;
-    max-width: 1200px;
-    width: 100%;
-    color: #ffffff;
-}
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000000;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
 
-.project-card {
-    width: 65%;
-    background: rgba(0, 0, 0, 0.7); /* Transparent black for contrast */
-    border: 2px solid #ff69b4; /* Pink border */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-}
+        nav ul li:hover ul {
+            display: block;
+        }
 
-.project-card h2 {
-    font-family: 'Lobster', cursive;
-    font-size: 2.5em;
-    color: #ff69b4; /* Pink color for title */
-}
+        nav a {
+            text-decoration: none;
+            color: #b0e0e6;
+            font-weight: bold;
+        }
 
-.project-card h3, .project-card p {
-    color: #b0e0e6; /* Light blue text for better contrast */
-}
+        #about-me {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 25%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 20px;
+            border-radius: 0 0 0 10px;
+            box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
+            border: none;
+        }
 
-/* Sidebar Styles */
-.sidebar {
-    width: 30%;
-    background-color: rgba(0, 49, 83, 0.8); /* Prussian blue with transparency */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border: 2px solid #ff69b4; /* Pink border */
-    height: auto;
-    align-self: flex-start;
-    color: #ffffff;
-}
+        main {
+            max-width: 900px;
+            margin: 150px auto 20px auto;
+            padding: 0 20px;
+        }
 
-.sidebar h2 {
-    font-family: 'Lobster', cursive;
-    font-size: 2em;
-    color: #b0e0e6; /* Light blue for title */
-}
+        .project-card {
+            background: rgba(0, 0, 0, 0.7);
+            border: none;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-left: 0;
+        }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 49, 83, 0.9);
-    color: #ffffff;
-    width: 100%;
-    margin-top: auto;
-}
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
 
-/* Button Styles */
-button {
-    background-color: #ffdf00; /* Bright yellow */
-    border: none;
-    color: #333;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
 
-button:hover {
-    background-color: #ffd700; /* Darker yellow for hover effect */
-}
+            #about-me {
+                position: static;
+                width: 100%;
+                height: auto;
+                border-radius: 0;
+                box-shadow: none;
+                margin-top: 20px;
+            }
+
+            main {
+                margin: 100px 20px;
+            }
+
+            .project-card {
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+
+            nav ul li ul {
+                position: static;
+                padding: 5px;
+            }
+
+            #about-me {
+                padding: 10px;
+            }
+
+            .project-card {
+                padding: 15px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background: url('images/abstract_background.png') no-repeat center center fixed; background-size: cover; color: #ffffff;">
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul style="float: right; margin: 0 1in 0 0;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                    <ul>
+                        <li><a href="prosopagnosia_ai.html">Prosopagnosia AI Assistance</a></li>
+                        <li><a href="social_media_analytics.html">Social Media Analytics Volunteer</a></li>
+                        <li><a href="imi_supply_chain.html">IMI Supply Chain Competition</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#other">Other</a>
+                    <ul>
+                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                        <li><a href="https://www.github.com">GitHub</a></li>
+                        <li><a href="dnd_site.html">D&D site</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <div id="about-me">
+        <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #b0e0e6;">About Me</h2>
+        <p>Hello! I’m Ashley, a Business Analyst currently a student at Florida Atlantic University.</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="projects">
+            <div class="project-card">
+                <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4; text-align: left;"><a href="prosopagnosia_ai.html" style="text-decoration: none; color: #ff69b4;">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</a></h2>
+                <h3 style="color: #b0e0e6;">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</h3>
+                <p><strong>Competition:</strong> Florida Atlantic University Wave Competition</p>
+                <p><strong>Year:</strong> 2025</p>
+                <p><strong>Idea:</strong> This project is being developed as part of the 2025 Wave Competition, aiming to create an innovative solution for individuals with Prosopagnosia (face blindness). The AI-powered device utilizes neural networks and Raspberry Pi technology to help recognize and identify.</p>
+                <p><strong>Goal:</strong> The goal is to improve independence and enhance the quality of life for individuals who struggle with facial recognition, providing them with a reliable assistive tool.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ashley Rotton. All rights reserved.</p>
+    </footer>
+</body>
+
+<script>
+    // JavaScript to show dropdown menus on hover
+    document.querySelectorAll('nav ul > li').forEach(function (menuItem) {
+        menuItem.addEventListener('mouseenter', function () {
+            const dropdown = menuItem.querySelector('ul');
+            if (dropdown) {
+                dropdown.style.display = 'block';
+            }
+        });
+        menuItem.addEventListener('mouseleave', function () {
+            const dropdown = menuItem.querySelector('ul');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</html>
