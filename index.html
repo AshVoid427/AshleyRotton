@@ -29,6 +29,8 @@
             padding: 0;
             display: flex;
             gap: 20px;
+            float: right;
+            margin-right: 3in;
         }
 
         nav ul li {
@@ -67,12 +69,15 @@
             border-radius: 0 0 0 10px;
             box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
             border: none;
+            z-index: 500; /* To ensure the about me section stays behind the header */
         }
 
         main {
-            width: calc(100% - 50% - 40px); /* Adjust width to stop before the About Me section */
-            margin: 150px auto 20px auto;
+            max-width: 900px;
+            margin: 150px auto 20px 1in;
             padding: 0 20px;
+            z-index: 1; /* Ensures main content is not overlapping with sidebar */
+            position: relative;
         }
 
         .project-card {
@@ -81,7 +86,6 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            margin-left: 0.5in;
         }
 
         footer {
@@ -146,7 +150,7 @@
     <!-- Header Section -->
     <header>
         <nav>
-            <ul style="float: right; margin: 0 1in 0 0;">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li>
@@ -178,14 +182,14 @@
     <!-- Main Content Section -->
     <main>
         <section id="projects">
-            <div class="project-card">
-                <h2 style="font-size: 2.5em; color: rgb(113, 165, 255); text-align: left;"><a href="prosopagnosia_ai.html" style="text-decoration: none; color: rgb(113, 165, 255);">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</a></h2>
-                <h3 style="color: rgb(113, 165, 255);">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</h3>
-                <p style="color: rgb(75, 57, 188);"><strong>Competition:</strong> Florida Atlantic University Wave Competition</p>
-                <p style="color: rgb(75, 57, 188);"><strong>Year:</strong> 2025</p>
-                <p style="color: rgb(75, 57, 188);"><strong>Idea:</strong> This project is being developed as part of the 2025 Wave Competition, aiming to create an innovative solution for individuals with Prosopagnosia (face blindness). The AI-powered device utilizes neural networks and Raspberry Pi technology to help recognize and identify.</p>
-                <p style="color: rgb(75, 57, 188);"><strong>Goal:</strong> The goal is to improve independence and enhance the quality of life for individuals who struggle with facial recognition, providing them with a reliable assistive tool.</p>
-            </div>
+            <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4; background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 5px;">Current Project</h2>
+            <div class="project-card" style="background: rgba(0, 0, 0, 0.7); border: none; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); margin: 2in;">
+    <h3 style="color: rgb(113, 165, 255);">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</h3>
+    <p style="color: rgb(75, 57, 188);"><strong>Competition:</strong> Florida Atlantic University Wave Competition</p>
+    <p style="color: rgb(75, 57, 188);"><strong>Year:</strong> 2025</p>
+    <p style="color: rgb(75, 57, 188);"><strong>Idea:</strong> This project is being developed as part of the 2025 Wave Competition, aiming to create an innovative solution for individuals with Prosopagnosia (face blindness). The AI-powered device utilizes neural networks and Raspberry Pi technology to help recognize and identify.</p>
+    <p style="color: rgb(75, 57, 188);"><strong>Goal:</strong> The goal is to improve independence and enhance the quality of life for individuals who struggle with facial recognition, providing them with a reliable assistive tool.</p>
+</div>
         </section>
     </main>
 
