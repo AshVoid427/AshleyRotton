@@ -1,0 +1,18 @@
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007acc; /* playful accent color */
+}
+nav a:hover {
+  color: #ff6f61; /* hover color to add some fun */
+}
+#about-me {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px; /* rounded corners for a friendly look */
+}
