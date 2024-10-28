@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Rotton's Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles for Projects Page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('images/abstract_background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            float: right;
+            margin-right: 3in;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000000;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #b0e0e6;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 150px auto 20px auto;
+            padding: 0 20px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.7);
+            border: none;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        .project-card h3 {
+            font-family: 'Lobster', cursive;
+            font-size: 2em;
+            color: #ff69b4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                    <ul>
+                        <li><a href="prosopagnosia_ai.html">Prosopagnosia AI Assistance</a></li>
+                        <li><a href="social_media_analytics.html">Social Media Analytics Volunteer</a></li>
+                        <li><a href="imi_supply_chain.html">IMI Supply Chain Competition</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#other">Other</a>
+                    <ul>
+                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                        <li><a href="https://www.github.com">GitHub</a></li>
+                        <li><a href="dnd_site.html">D&D site</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="projects">
+            <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4;">Projects</h2>
+            <div class="project-card">
+                <h3><a href="prosopagnosia_ai.html" style="text-decoration: none; color: #ff69b4;">Prosopagnosia AI Assistance</a></h3>
+                <p>An assistive AI project designed for individuals with face blindness, utilizing neural networks and Raspberry Pi technology to aid in facial recognition.</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="social_media_analytics.html" style="text-decoration: none; color: #ff69b4;">Social Media Analytics Volunteer</a></h3>
+                <p>Analyzed social media metrics and managed content for Vape City Smoke Shop as a social media volunteer during Fall 2024.</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="imi_supply_chain.html" style="text-decoration: none; color: #ff69b4;">IMI Supply Chain Competition</a></h3>
+                <p>Participated as team leader in the Spring Semester 2024 IMI Supply Chain Analytics Competition, focusing on optimizing supply chain solutions.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ashley Rotton. All rights reserved.</p>
+    </footer>
+</body>
+
+<script>
+    // JavaScript to show dropdown menus on hover
+    document.querySelectorAll('nav ul > li').forEach(function (menuItem) {
+        menuItem.addEventListener('mouseenter', function () {
+            const dropdown = menuItem.querySelector('ul');
+            if (dropdown) {
+                dropdown.style.display = 'block';
+            }
+        });
+        menuItem.addEventListener('mouseleave', function () {
+            const dropdown = menuItem.querySelector('ul');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</html>
