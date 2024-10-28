@@ -6,8 +6,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #333333; /* Charcoal black background */
-    max-width: 1200px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Styles */
@@ -39,7 +40,6 @@ nav a:hover {
 
 /* Sidebar Styles */
 .sidebar {
-    float: right;
     width: 30%;
     background-color: #444444; /* Dark grey background for contrast */
     padding: 20px;
@@ -47,16 +47,22 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border: 2px solid #003153; /* Prussian blue border */
+    float: right;
 }
 
 /* Main Content Styles */
 main {
+    flex: 1;
     margin: 20px;
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .project-card {
+    width: 60%;
     background: linear-gradient(135deg, #444444, #333333); /* Gradient from dark grey to charcoal */
     border: 2px solid #003153;
     padding: 20px;
@@ -71,9 +77,8 @@ footer {
     padding: 20px;
     background-color: #003153;
     color: #ffffff;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 /* Button Styles */
