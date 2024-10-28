@@ -1,261 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Rotton's Portfolio</title>
+    <title>Resume - Ashley Rotton</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <style>
-        /* General Styles for Responsive Design */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('images/AI images/Resume 2.png') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
-        }
-
-        header {
-            background-color: #000000;
-            padding: 10px 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-            float: right;
-            margin-right: 3in;
-        }
-
-        nav ul li {
-            position: relative;
-        }
-
-        nav ul li ul {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #000000;
-            list-style: none;
-            padding: 10px;
-            border-radius: 5px;
-            display: none;
-        }
-
-        nav ul li:hover ul {
-            display: block;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #b0e0e6;
-            font-weight: bold;
-        }
-
-        main {
-            margin: 150px auto 20px auto;
-            padding: 0 20px;
-            z-index: 1; /* Ensures main content is not overlapping with sidebar */
-            position: relative;
-        }
-
-        .resume-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 100px; /* Increased gap between Education and Skills sections */
-        }
-
-        .resume-content div {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            width: 45%;
-            position: sticky;
-            top: 150px;
-        }
-
-        .resume-link {
-            background: rgba(231, 41, 131, 0.9);
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            text-align: center;
-            margin-top: 40px;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-
-        /* Media Queries for Mobile Devices */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }
-
-            main {
-                margin: 100px 20px;
-            }
-
-            .resume-content {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .resume-content div {
-                width: 100%;
-            }
-
-            .resume-link {
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                padding: 10px;
-            }
-
-            nav ul {
-                gap: 10px;
-            }
-
-            nav ul li ul {
-                position: static;
-                padding: 5px;
-            }
-
-            .resume-content div {
-                padding: 15px;
-                border-radius: 10px;
-            }
-
-            .resume-link {
-                padding: 15px;
-                border-radius: 10px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Header Section -->
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li>
-                    <a href="#projects">Projects</a>
-                    <ul>
-                        <li><a href="prosopagnosia_ai.html">Prosopagnosia AI Assistance</a></li>
-                        <li><a href="social_media_analytics.html">Social Media Analytics Volunteer</a></li>
-                        <li><a href="imi_supply_chain.html">IMI Supply Chain Competition</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#other">Other</a>
-                    <ul>
-                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-                        <li><a href="https://www.github.com">GitHub</a></li>
-                        <li><a href="dnd_site.html">D&D site</a></li>
-                    </ul>
-                </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#">Other</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Main Content Section -->
     <main>
-        <section id="resume">
-            <div class="resume-content">
-                <div>
-                    <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #ffffff;">Education</h2>
-                    <p style="font-size: 1.2em; line-height: 1.5;">
-                        <strong>Florida Atlantic University</strong><br>
-                        Bachelors of Science in Data Science and Analytics with Business Concentration<br>
-                        <em>Boca Raton, FL 33431, December 2025</em>
-                    </p>
-                    <p style="font-size: 1.2em; line-height: 1.5;">
-                        <strong>Broward College</strong><br>
-                        Associates of Arts in Business Administration<br>
-                        <em>Coconut Creek, FL 33066, May 2019 | 3.49 GPA</em>
-                    </p>
-                    <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #ffffff;">Experience</h2>
-                    <p style="font-size: 1.2em; line-height: 1.5;">
-                        <strong>Tide Dry Cleaners</strong><br>
-                        Customer Representative<br>
-                        <em>N/A</em>
-                    </p>
-                    <p style="font-size: 1.2em; line-height: 1.5;">
-                        <strong>Nordstrom Warehouse</strong><br>
-                        Warehouse Employee<br>
-                    </p>
-                    <p style="font-size: 1.2em; line-height: 1.5;">
-                        <strong>Piesano's Pizza</strong><br>
-                        Warehouse Employee
-                    </p>
-                </div>
-                <div>
-                    <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #ffffff;">Skills</h2>
-                    <ul style="font-size: 1.2em; line-height: 1.5; list-style: none;">
-                        <li>Proficient in Microsoft Office</li>
-                        <li>Python</li>
-                        <li>AlexNet</li>
-                        <li>R</li>
-                        <li>Analytical Skills</li>
-                        <li>Business Communication</li>
-                        <li>SQL Database Management</li>
-                        <li>Principal and Foundation in Accounting</li>
-                    </ul>
-                </div>
+        <div class="resume-container">
+            <div class="left-section">
+                <h2>Education</h2>
+                <p><strong>Florida Atlantic University</strong><br>
+                    Bachelors of Science in Data Science and Analytics with Business Concentration<br>
+                    Boca Raton, FL 33231<br>
+                    December 2025</p>
+                <p><strong>Broward College</strong><br>
+                    Associates of Arts in Business Administration<br>
+                    Coconut Creek, FL 33066<br>
+                    May 2019 | 3.49 GPA</p>
+                
+                <h2>Experience</h2>
+                <p><strong>Tide Dry Cleaners</strong><br>
+                    Customer Representative</p>
+                <p><strong>Nordstrom Warehouse</strong><br>
+                    Warehouse Employee</p>
+                <p><strong>Piesanoes Pizza</strong><br>
+                    N/A</p>
             </div>
-            <div class="resume-link">
-                <a href="images/AI images/Business Analyst Resume.png" style="background: rgba(231, 41, 131, 0.9); color: #000; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Resume.pdf</a>
+            <div class="right-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Proficient in Microsoft Office</li>
+                    <li>Python</li>
+                    <li>AlexNet</li>
+                    <li>R</li>
+                    <li>Analytical Skills</li>
+                    <li>Business Communication</li>
+                    <li>SQL</li>
+                    <li>Database Management</li>
+                    <li>Principal and Foundation in Accounting</li>
+                </ul>
             </div>
-        </section>
+        </div>
+        <div class="resume-download">
+            <a href="Resume.pdf" class="download-button">Resume.pdf</a>
+        </div>
     </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Ashley Rotton. All rights reserved.</p>
-    </footer>
 </body>
-
-<script>
-    // JavaScript to show dropdown menus on hover
-    document.querySelectorAll('nav ul > li').forEach(function (menuItem) {
-        menuItem.addEventListener('mouseenter', function () {
-            const dropdown = menuItem.querySelector('ul');
-            if (dropdown) {
-                dropdown.style.display = 'block';
-            }
-        });
-        menuItem.addEventListener('mouseleave', function () {
-            const dropdown = menuItem.querySelector('ul');
-            if (dropdown) {
-                dropdown.style.display = 'none';
-            }
-        });
-    });
-</script>
-
 </html>
