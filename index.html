@@ -9,29 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background: url('images/abstract_background.png') no-repeat center center fixed; background-size: cover; color: #ffffff;">
     <!-- Header Section -->
     <header>
-        <nav style="float: right;">
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="#other">Other</a></li>
+        <nav>
+            <ul style="float: right; list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+                <li><a href="#projects" style="text-decoration: none; color: #b0e0e6; font-weight: bold;">Projects</a></li>
+                <li><a href="resume.html" style="text-decoration: none; color: #b0e0e6; font-weight: bold;">Resume</a></li>
+                <li><a href="#other" style="text-decoration: none; color: #b0e0e6; font-weight: bold;">Other</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- About Me Section -->
-    <div id="about-me" class="sidebar">
-        <h2>About Me</h2>
+    <div id="about-me" class="sidebar" style="position: absolute; right: 20px; top: 150px; width: 25%; background: rgba(0, 49, 83, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+        <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #b0e0e6;">About Me</h2>
         <p>Hello! I’m Ashley, a Business Analyst currently a student at Florida Atlantic University.</p>
     </div>
 
     <!-- Main Content Section -->
-    <main>
+    <main style="max-width: 1200px; margin: 150px auto 20px;">
         <section id="projects">
-            <div class="project-card">
-                <h2>Current Project</h2>
+            <div class="project-card" style="background: rgba(0, 0, 0, 0.7); border: 2px solid #ff69b4; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+                <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4;">Current Project</h2>
                 <h3>Prosopagnosia AI: Developing an Assistive Device for Face Blindness</h3>
                 <p><strong>Competition:</strong> Florida Atlantic University Wave Competition</p>
                 <p><strong>Year:</strong> 2025</p>
@@ -42,7 +42,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer>
+    <footer style="text-align: center; padding: 20px; background-color: rgba(0, 49, 83, 0.9);">
         <p>&copy; 2024 Ashley Rotton. All rights reserved.</p>
     </footer>
 </body>
