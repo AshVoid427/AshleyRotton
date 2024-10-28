@@ -38,18 +38,6 @@ nav a:hover {
     color: #7fff00; /* Bright green for hover effect */
 }
 
-/* Sidebar Styles */
-.sidebar {
-    width: 30%;
-    background-color: #444444; /* Dark grey background for contrast */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 2px solid #003153; /* Prussian blue border */
-    float: right;
-}
-
 /* Main Content Styles */
 main {
     flex: 1;
@@ -58,17 +46,28 @@ main {
     margin: auto;
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .project-card {
-    width: 60%;
+    width: 65%;
     background: linear-gradient(135deg, #444444, #333333); /* Gradient from dark grey to charcoal */
     border: 2px solid #003153;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 30%;
+    background-color: #444444; /* Dark grey background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #003153; /* Prussian blue border */
+    height: auto;
 }
 
 /* Footer Styles */
