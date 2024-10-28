@@ -7,29 +7,162 @@
     <title>Ashley Rotton's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles for Responsive Design */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000000;
+            list-style: none;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #b0e0e6;
+            font-weight: bold;
+        }
+
+        #about-me {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 25%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 20px;
+            border-radius: 0 0 0 10px;
+            box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
+            border: none;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 150px auto 20px auto;
+            padding: 0 20px;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.7);
+            border: none;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-left: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            #about-me {
+                position: static;
+                width: 100%;
+                height: auto;
+                border-radius: 0;
+                box-shadow: none;
+                margin-top: 20px;
+            }
+
+            main {
+                margin: 100px 20px;
+            }
+
+            .project-card {
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+
+            nav ul li ul {
+                position: static;
+                padding: 5px;
+            }
+
+            #about-me {
+                padding: 10px;
+            }
+
+            .project-card {
+                padding: 15px;
+                border-radius: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body style="background: url('images/abstract_background.png') no-repeat center center fixed; background-size: cover; color: #ffffff;">
     <!-- Header Section -->
-    <header style="background-color: #000000; padding: 10px 20px; position: fixed; width: 100%; top: 0; z-index: 1000;">
+    <header>
         <nav>
-            <ul style="float: right; list-style: none; margin: 0 1in 0 0; padding: 0; display: flex; gap: 20px;">
-                <li><a href="#home" style="text-decoration: none; color: #b0e0e6; font-weight: bold;">Home</a></li>
-                <li><a href="resume.html" style="text-decoration: none; color: #b0e0e6; font-weight: bold;">Resume</a></li>
-                <li style="position: relative;">
-                    <a href="#projects" style="text-decoration: none; color: #b0e0e6; font-weight: bold;">Projects</a>
-                    <ul style="position: absolute; top: 100%; left: 0; background-color: #000000; list-style: none; padding: 10px; border-radius: 5px; display: none;">
-                        <li><a href="prosopagnosia_ai.html" style="text-decoration: none; color: #b0e0e6; display: block; padding: 5px 0;">Prosopagnosia AI Assistance</a></li>
-                        <li><a href="social_media_analytics.html" style="text-decoration: none; color: #b0e0e6; display: block; padding: 5px 0;">Social Media Analytics Volunteer</a></li>
-                        <li><a href="imi_supply_chain.html" style="text-decoration: none; color: #b0e0e6; display: block; padding: 5px 0;">IMI Supply Chain Competition</a></li>
+            <ul style="float: right; margin: 0 1in 0 0;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                    <ul>
+                        <li><a href="prosopagnosia_ai.html">Prosopagnosia AI Assistance</a></li>
+                        <li><a href="social_media_analytics.html">Social Media Analytics Volunteer</a></li>
+                        <li><a href="imi_supply_chain.html">IMI Supply Chain Competition</a></li>
                     </ul>
                 </li>
-                <li style="position: relative;">
-                    <a href="#other" style="text-decoration: none; color: #b0e0e6; font-weight: bold;">Other</a>
-                    <ul style="position: absolute; top: 100%; left: 0; background-color: #000000; list-style: none; padding: 10px; border-radius: 5px; display: none;">
-                        <li><a href="https://www.linkedin.com" style="text-decoration: none; color: #b0e0e6; display: block; padding: 5px 0;">LinkedIn</a></li>
-                        <li><a href="https://www.github.com" style="text-decoration: none; color: #b0e0e6; display: block; padding: 5px 0;">GitHub</a></li>
-                        <li><a href="dnd_site.html" style="text-decoration: none; color: #b0e0e6; display: block; padding: 5px 0;">D&D site</a></li>
+                <li>
+                    <a href="#other">Other</a>
+                    <ul>
+                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                        <li><a href="https://www.github.com">GitHub</a></li>
+                        <li><a href="dnd_site.html">D&D site</a></li>
                     </ul>
                 </li>
             </ul>
@@ -37,16 +170,16 @@
     </header>
 
     <!-- About Me Section -->
-    <div id="about-me" class="sidebar" style="position: fixed; right: 0; top: 0; width: 25%; height: 100%; background: rgba(0, 0, 0, 0.95); padding: 20px; border-radius: 0 0 0 10px; box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5); border: none;">
+    <div id="about-me">
         <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #b0e0e6;">About Me</h2>
         <p>Hello! I’m Ashley, a Business Analyst currently a student at Florida Atlantic University.</p>
     </div>
 
     <!-- Main Content Section -->
-    <main style="max-width: 900px; margin: 150px auto 20px 0;">
+    <main>
         <section id="projects">
-            <div class="project-card" style="background: rgba(0, 0, 0, 0.7); border: none; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); margin-left: 0;">
-                <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4; text-align: left;"><a href="prosopagnosia_ai.html" style="text-decoration: none; color: #ff69b4;">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</a></h2>
+            <div class="project-card">
+                <h2 style="font-size: 2.5em; color: #ff69b4; text-align: left;"><a href="prosopagnosia_ai.html" style="text-decoration: none; color: #ff69b4;">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</a></h2>
                 <h3 style="color: #b0e0e6;">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</h3>
                 <p><strong>Competition:</strong> Florida Atlantic University Wave Competition</p>
                 <p><strong>Year:</strong> 2025</p>
@@ -57,7 +190,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer style="text-align: center; padding: 20px; background-color: rgba(0, 0, 0, 0.9);">
+    <footer>
         <p>&copy; 2024 Ashley Rotton. All rights reserved.</p>
     </footer>
 </body>
