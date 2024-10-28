@@ -62,8 +62,7 @@
         }
 
         main {
-            max-width: calc(75% - 40px); /* Adjusted to avoid overlapping with about me */
-            margin: 150px auto 20px;
+            margin: 150px auto 20px auto;
             padding: 0 20px;
             z-index: 1; /* Ensures main content is not overlapping with sidebar */
             position: relative;
@@ -73,7 +72,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            gap: 40px; /* Added gap between Education and Skills sections */
+            gap: 100px; /* Increased gap between Education and Skills sections */
         }
 
         .resume-content div {
@@ -82,26 +81,20 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             width: 45%;
-            position: fixed;
-            top: 200px;
-            height: auto;
-        }
-
-        .resume-content div:first-child {
-            left: 20px;
-        }
-
-        .resume-content div:last-child {
-            right: 20px;
+            position: sticky;
+            top: 150px;
         }
 
         .resume-link {
-            background: rgba(231, 41, 131, 0.7);
+            background: rgba(231, 41, 131, 0.9);
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             text-align: center;
             margin-top: 40px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         footer {
@@ -125,12 +118,10 @@
             .resume-content {
                 flex-direction: column;
                 gap: 20px;
-                position: static;
             }
 
             .resume-content div {
                 width: 100%;
-                position: static;
             }
 
             .resume-link {
