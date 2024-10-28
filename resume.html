@@ -69,14 +69,18 @@
             position: relative;
         }
 
-        .project-card {
+        .resume-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .resume-content div {
             background: rgba(0, 0, 0, 0.7);
-            border: none;
-            padding: 20px;
             border-radius: 15px;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            margin: 40px 1in 40px 1in;
-            max-width: 70%;
+            width: 45%;
         }
 
         footer {
@@ -97,8 +101,13 @@
                 margin: 100px 20px;
             }
 
-            .project-card {
-                margin: 20px 0;
+            .resume-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .resume-content div {
+                width: 100%;
             }
         }
 
@@ -116,7 +125,7 @@
                 padding: 5px;
             }
 
-            .project-card {
+            .resume-content div {
                 padding: 15px;
                 border-radius: 10px;
             }
@@ -154,8 +163,8 @@
     <!-- Main Content Section -->
     <main>
         <section id="resume">
-            <div class="resume-content" style="display: flex;">
-                <div style="width: 50%; padding-right: 20px;">
+            <div class="resume-content">
+                <div>
                     <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #ffffff;">Education</h2>
                     <p style="font-size: 1.2em; line-height: 1.5;">
                         <strong>Florida Atlantic University</strong><br>
@@ -182,7 +191,7 @@
                         Warehouse Employee
                     </p>
                 </div>
-                <div style="width: 50%;">
+                <div>
                     <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #ffffff;">Skills</h2>
                     <ul style="font-size: 1.2em; line-height: 1.5; list-style: none;">
                         <li>Proficient in Microsoft Office</li>
