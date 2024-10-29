@@ -18,7 +18,7 @@
             list-style-type: none;
             padding: 0;
             justify-content: flex-start;
-            margin-left: 0px;
+            margin-left: 50px;
         }
         header nav ul li {
             margin: 0 15px;
@@ -30,15 +30,27 @@
         }
         .resume-container {
             display: flex;
-            justify-content: space-between;
-            padding: 50px;
+            justify-content: flex-start;
+            padding: 50px 0;
+            width: 100%;
         }
-        .left-section, .right-section {
+        .left-section {
             width: 48%;
             background: rgba(0, 0, 0, 0.8);
             padding: 30px;
             border: 0px solid white;
             border-radius: 15px;
+            margin-right: auto;
+        }
+        .right-section {
+            width: 48%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border: 0px solid white;
+            border-radius: 15px;
+            margin-left: 0;
+            position: absolute;
+            right: 0;
         }
         h2 {
             font-weight: 700;
@@ -78,6 +90,20 @@
     <main>
         <div class="resume-container">
             <div class="left-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Proficient in Microsoft Office</li>
+                    <li>Python</li>
+                    <li>AlexNet</li>
+                    <li>R</li>
+                    <li>Analytical Skills</li>
+                    <li>Business Communication</li>
+                    <li>SQL</li>
+                    <li>Database Management</li>
+                    <li>Principal and Foundation in Accounting</li>
+                </ul>
+            </div>
+            <div class="right-section">
                 <h2>Education</h2>
                 <p><strong>Florida Atlantic University</strong><br>
                     Bachelors of Science in Data Science and Analytics with Business Concentration<br>
@@ -94,20 +120,6 @@
                     Warehouse Employee</p>
                 <p><strong>Piesanoes Pizza</strong><br>
                     N/A</p>
-            </div>
-            <div class="right-section">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Proficient in Microsoft Office</li>
-                    <li>Python</li>
-                    <li>AlexNet</li>
-                    <li>R</li>
-                    <li>Analytical Skills</li>
-                    <li>Business Communication</li>
-                    <li>SQL</li>
-                    <li>Database Management</li>
-                    <li>Principal and Foundation in Accounting</li>
-                </ul>
             </div>
         </div>
         <div class="resume-download">
