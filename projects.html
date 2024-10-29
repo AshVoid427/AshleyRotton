@@ -63,19 +63,26 @@
 
         main {
             max-width: 1000px;
-            margin: 150px auto 20px auto;
+            margin: 0 auto;
             padding: 0 20px;
             z-index: 1;
             position: relative;
         }
 
+        .projects-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
         .project-card {
+            position: absolute;
             background: rgba(0, 0, 0, 0.7);
             border: none;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            margin-bottom: 40px;
+            width: 300px;
         }
 
         .project-card h3 {
@@ -84,10 +91,33 @@
             color: #ff69b4;
         }
 
+        .project-card a {
+            text-decoration: none;
+            color: #ff69b4;
+        }
+
+        .project1 {
+            top: 60%;
+            left: 10%;
+        }
+
+        .project2 {
+            top: 60%;
+            left: 40%;
+        }
+
+        .project3 {
+            top: 60%;
+            left: 70%;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.9);
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -121,18 +151,18 @@
 
     <!-- Main Content Section -->
     <main>
-        <section id="projects">
-            <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4;">Projects</h2>
-            <div class="project-card">
-                <h3><a href="prosopagnosia_ai.html" style="text-decoration: none; color: #ff69b4;">Prosopagnosia AI Assistance</a></h3>
+        <section id="projects" class="projects-container">
+            <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4; text-align: center; margin-top: 100px;">Projects</h2>
+            <div class="project-card project1">
+                <h3><a href="prosopagnosia_ai.html">Prosopagnosia AI Assistance</a></h3>
                 <p>An assistive AI project designed for individuals with face blindness, utilizing neural networks and Raspberry Pi technology to aid in facial recognition.</p>
             </div>
-            <div class="project-card">
-                <h3><a href="social_media_analytics.html" style="text-decoration: none; color: #ff69b4;">Social Media Analytics Volunteer</a></h3>
+            <div class="project-card project2">
+                <h3><a href="social_media_analytics.html">Social Media Analytics Volunteer</a></h3>
                 <p>Analyzed social media metrics and managed content for Vape City Smoke Shop as a social media volunteer during Fall 2024.</p>
             </div>
-            <div class="project-card">
-                <h3><a href="imi_supply_chain.html" style="text-decoration: none; color: #ff69b4;">IMI Supply Chain Competition</a></h3>
+            <div class="project-card project3">
+                <h3><a href="imi_supply_chain.html">IMI Supply Chain Competition</a></h3>
                 <p>Participated as team leader in the Spring Semester 2024 IMI Supply Chain Analytics Competition, focusing on optimizing supply chain solutions.</p>
             </div>
         </section>
