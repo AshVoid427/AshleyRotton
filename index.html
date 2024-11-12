@@ -1,222 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashley Rotton's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <style>
-        /* General Styles for Responsive Design */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #000000;
-            padding: 10px 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-            float: right;
-            margin-right: 3in;
-        }
-
-        nav ul li {
-            position: relative;
-        }
-
-        nav ul li ul {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #000000;
-            list-style: none;
-            padding: 10px;
-            border-radius: 5px;
-            display: none;
-        }
-
-        nav ul li:hover ul {
-            display: block;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #b0e0e6;
-            font-weight: bold;
-        }
-
-        #about-me {
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 25%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            padding: 20px;
-            border-radius: 0 0 0 10px;
-            box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
-            border: none;
-            z-index: 500; /* To ensure the about me section stays behind the header */
-        }
-
-        main {
-            max-width: calc(75% - 40px); /* Adjusted to avoid overlapping with about me */
-            margin: 150px auto 20px 1in;
-            padding: 0 20px;
-            z-index: 1; /* Ensures main content is not overlapping with sidebar */
-            position: relative;
-        }
-
-        .project-card {
-            background: rgba(0, 0, 0, 0.7);
-            border: none;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            margin: 40px 1in 40px 1in;
-            max-width: 70%;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-
-        /* Media Queries for Mobile Devices */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }
-
-            #about-me {
-                position: static;
-                width: 100%;
-                height: auto;
-                border-radius: 0;
-                box-shadow: none;
-                margin-top: 20px;
-            }
-
-            main {
-                margin: 100px 20px;
-            }
-
-            .project-card {
-                margin: 20px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                padding: 10px;
-            }
-
-            nav ul {
-                gap: 10px;
-            }
-
-            nav ul li ul {
-                position: static;
-                padding: 5px;
-            }
-
-            #about-me {
-                padding: 10px;
-            }
-
-            .project-card {
-                padding: 15px;
-                border-radius: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lobster&display=swap" rel="stylesheet">
 </head>
-
-<body style="background: url('images/abstract_background.png') no-repeat center center fixed; background-size: cover; color: #ffffff;">
-    <!-- Header Section -->
-    <header>
-        <nav>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="images/ashley_photo.jpg" alt="Ashley Rotton" class="profile-img">
+            <h2>Ashley Rotton</h2>
+            <p>Aspiring Business Analyst</p>
+        </div>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li>
-                    <a href="#projects">Projects</a>
-                    <ul>
-                        <li><a href="prosopagnosia_ai.html">Prosopagnosia AI Assistance</a></li>
-                        <li><a href="social_media_analytics.html">Social Media Analytics Volunteer</a></li>
-                        <li><a href="imi_supply_chain.html">IMI Supply Chain Competition</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#other">Other</a>
-                    <ul>
-                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-                        <li><a href="https://www.github.com">GitHub</a></li>
-                        <li><a href="dnd_site.html">D&D site</a></li>
-                    </ul>
-                </li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#goals">Career Goals</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </aside>
 
-    <!-- About Me Section -->
-    <div id="about-me">
-        <h2 style="font-family: 'Lobster', cursive; font-size: 2em; color: #b0e0e6;">About Me</h2>
-        <p>Hello! I’m Ashley, a Business Analyst currently a student at Florida Atlantic University.</p>
-    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Ashley Rotton, a Data Science student passionate about business analytics and finding insights in data.</p>
+        </section>
 
-    <!-- Main Content Section -->
-   <main>
-    <section id="projects">
-        <h2 style="font-family: 'Lobster', cursive; font-size: 2.5em; color: #ff69b4; background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 5px;">Current Project</h2>
-         <div class="project-card" style="background: rgba(0, 0, 0, 0.7); border: none; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); margin: 40px 1in 40px 1in; max-width: 70%;">
-             <h3><a href="prosopagnosia_ai.html" style="text-decoration: none; color: rgb(113, 165, 255);">Prosopagnosia AI: Developing an Assistive Device for Face Blindness</a></h3>
-                <p style="color: rgb(75, 57, 188); font-size: 1.2em;"><strong>Competition:</strong> Florida Atlantic University Wave Competition</p>
-                <p style="color: rgb(75, 57, 188);"><strong>Year:</strong> 2025</p>
-                <p style="color: rgb(75, 57, 188);"><strong>Idea:</strong> This project is being developed as part of the 2025 Wave Competition, aiming to create an innovative solution for individuals with Prosopagnosia (face blindness). The AI-powered device utilizes neural networks and Raspberry Pi technology to help recognize and identify.</p>
-                      <p style="color: rgb(75, 57, 188);"><strong>Goal:</strong> The goal is to improve independence and enhance the quality of life for individuals who struggle with facial recognition, providing them with a reliable assistive tool.</p>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi! I'm Ashley, a Data Science and Analytics student at Florida Atlantic University with a strong interest in Business Analysis. My focus is on leveraging data to make strategic business decisions. I'm also Wiccan, which influences my personal journey and creativity.</p>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <div class="project-card">
+                <h3><a href="prosopagnosia_ai.html">Prosopagnosia AI Assistance</a></h3>
+                <p>An assistive AI project designed for individuals with face blindness, utilizing neural networks and Raspberry Pi technology.</p>
             </div>
-    </section>
-</main>
+            <div class="project-card">
+                <h3><a href="social_media_analytics.html">Social Media Analytics Volunteer</a></h3>
+                <p>Managed and analyzed social media for Vape City Smoke Shop during Fall 2024, providing insights and content strategies.</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="imi_supply_chain.html">IMI Supply Chain Competition</a></h3>
+                <p>Led Team 4 during the Spring Semester 2024 IMI Supply Chain Analytics Competition, optimizing supply chain strategies.</p>
+            </div>
+        </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Ashley Rotton. All rights reserved.</p>
-    </footer>
+        <section id="goals" class="section">
+            <h2>Career Goals</h2>
+            <p>My goal is to become a Business Analyst focused on helping companies make data-driven decisions. I am currently enhancing my skills in Power BI and SQL, and I want to further develop my ability to design intuitive dashboards and uncover business insights. Long-term, I hope to work on projects that have a positive social impact.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/ashleyrotton" target="_blank">LinkedIn</a> or view my projects on <a href="https://github.com/AshleyRotton" target="_blank">GitHub</a>.</p>
+        </section>
+    </div>
 </body>
-
-<script>
-    // JavaScript to show dropdown menus on hover
-    document.querySelectorAll('nav ul > li').forEach(function (menuItem) {
-        menuItem.addEventListener('mouseenter', function () {
-            const dropdown = menuItem.querySelector('ul');
-            if (dropdown) {
-                dropdown.style.display = 'block';
-            }
-        });
-        menuItem.addEventListener('mouseleave', function () {
-            const dropdown = menuItem.querySelector('ul');
-            if (dropdown) {
-                dropdown.style.display = 'none';
-            }
-        });
-    });
-</script>
-
 </html>
