@@ -3,20 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashley Rotton - Data Science & Analytics Professional</title>
+    <title>Contact & Additional Information - Ashley Rotton</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('images/gradient background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .info-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .card {
+            background: linear-gradient(to bottom, #000000, #333333);
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .card h3 {
+            color: inherit;
+        }
+        .card p, .card a {
+            color: inherit;
+        }
+    </style>
 </head>
 <body>
-    <div class="hero-section">
-        <div class="overlay">
-            <div class="content">
-                <h1>Ashley Rotton - Data Science & Analytics Professional</h1>
-                <p>Innovative business analyst and Florida Atlantic University student developing AI solutions for real-world challenges. Specializing in neural networks, data visualization, and supply chain optimization.</p>
-                <div class="buttons">
-                    <a href="resume.html" class="btn">View Resume</a>
-                    <a href="projects.html" class="btn">Explore Projects</a>
-                    <a href="contact.html" class="btn">Contact</a>
+    <div class="contact-section">
+        <!-- Background Image -->
+        <div class="background-image">
+            <img src="contact-background.png" alt="Background Image" class="section-image">
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact & Additional Information</h2>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>Location</h3>
+                    <p>Coconut Creek, Florida</p>
+                </div>
+                <div class="card">
+                    <h3>Age</h3>
+                    <p>25 years old</p>
+                </div>
+                <div class="card">
+                    <h3>Graduation</h3>
+                    <p>Expected: Fall 2025</p>
+                </div>
+                <div class="card">
+                    <h3>Resume</h3>
+                    <a href="resume.pdf" download>Download PDF</a>
                 </div>
             </div>
         </div>
