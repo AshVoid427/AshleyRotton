@@ -13,6 +13,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             font-family: 'Roboto', sans-serif;
+            margin: 0;
         }
         .hero-section {
             display: flex;
@@ -21,24 +22,29 @@
             align-items: center;
             height: 100vh;
             padding: 20px;
+            box-sizing: border-box;
         }
         .overlay {
             text-align: center;
             background: rgba(0, 0, 0, 0.6);
             padding: 40px;
             border-radius: 15px;
+            width: 90%;
             max-width: 600px;
+            box-sizing: border-box;
         }
         .content h1 {
             color: #ffffff;
             font-size: 2.5em;
             margin-bottom: 20px;
+            word-wrap: break-word;
         }
         .content p {
             color: #ffffff;
             font-size: 1.2em;
             line-height: 1.5;
             margin-bottom: 30px;
+            word-wrap: break-word;
         }
         .buttons {
             display: flex;
@@ -55,9 +61,22 @@
             text-decoration: none;
             font-weight: bold;
             transition: background 0.3s;
+            box-sizing: border-box;
         }
         .btn:hover {
             background: #8b008b;
+        }
+        @media (max-width: 600px) {
+            .content h1 {
+                font-size: 2em;
+            }
+            .content p {
+                font-size: 1em;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
