@@ -3,40 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Additional Information - Ashley Rotton</title>
+    <title>Contact - Ashley Rotton</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/contact_background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .contact-text {
+            max-width: 50%;
+        }
+        .contact-text h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .info-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .info-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+            width: calc(50% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .info-box h3 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <div class="contact-section">
-        <!-- Background Image -->
-        <div class="background-image">
-            <img src="contact-background.png" alt="Background Image" class="section-image">
-        </div>
-
-        <!-- Contact Information -->
-        <div class="contact-info">
+        <div class="contact-text">
             <h2>Contact & Additional Information</h2>
-            <div class="info-cards">
-                <div class="card">
+            <div class="info-boxes">
+                <div class="info-box">
                     <h3>Location</h3>
                     <p>Coconut Creek, Florida</p>
                 </div>
-                <div class="card">
+                <div class="info-box">
                     <h3>Age</h3>
                     <p>25 years old</p>
                 </div>
-                <div class="card">
+                <div class="info-box">
                     <h3>Graduation</h3>
                     <p>Expected: Fall 2025</p>
                 </div>
-                <div class="card">
+                <div class="info-box">
                     <h3>Resume</h3>
-                    <a href="resume.pdf" download>Download PDF</a>
+                    <p><a href="resume.pdf" download style="color: #ffffff; text-decoration: underline;">Download PDF</a></p>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-
