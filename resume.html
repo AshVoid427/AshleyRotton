@@ -81,7 +81,7 @@
             position: relative;
             background-image: url(images/workworkwork.png);
             background-size: cover;
-            background-position: 80%;
+            background-position: center;
             padding: unset;
             border-radius: 10px;
             width: 90%;
@@ -96,7 +96,7 @@
             max-width: 350px;
             max-height: 150px;
             padding: 15px;
-            margin: 30px auto;
+            margin: 20px auto;
             border-radius: 10px;
             color: #ffffff;
             position: relative;
@@ -114,14 +114,17 @@
         }
         @media (max-width: 768px) {
             .professional-experience {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 background-size: contain;
+                background-position: center;
                 padding: 20px;
             }
             .experience-bubble {
-                width: 90%;
-                max-width: 300px;
-                margin: 20px auto;
+                max-width: 90%;
                 right: 0;
+                margin: 10px 0;
             }
         }
     </style>
