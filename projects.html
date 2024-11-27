@@ -11,125 +11,137 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('images/gradient background.png');
+        }
+        .section {
+            padding: 60px 30px;
+        }
+        .projects-section-1 {
+            background-image: url('images/contact_background.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
-        .projects-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 60px;
-            max-width: 1200px;
-            margin: auto;
+            justify-content: center;
+            min-height: 100vh;
         }
-        .project {
+        .project-boxes {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-box {
             background: rgba(0, 0, 0, 0.7);
-            padding: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            color: #ffffff;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .projects-section-2 {
+            background-image: url('images/supplychain.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 60px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 75%;
+            color: #ffffff;
+        }
+        .projects-section-2 h2, .projects-section-2 p {
+            max-width: 75%;
+        }
+        .projects-section-3 {
+            background-image: url('images/socialmedia.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 60px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            color: #ffffff;
+            position: relative;
+        }
+        .projects-section-3 .placeholder-images {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .projects-section-3 .info-boxes {
+            width: 50%;
+            text-align: right;
+        }
+        .info-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .info-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
             border-radius: 10px;
             color: #ffffff;
             width: 100%;
-            max-width: 1000px;
-            margin-bottom: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .project h2 {
-            font-size: 2.5em;
+        .info-box h3 {
+            margin: 0;
             font-weight: 700;
-            margin-bottom: 20px;
-        }
-        .project-content {
-            display: flex;
-            align-items: center;
-        }
-        .project-image {
-            width: 40%;
-            margin-right: 40px;
-        }
-        .project-image img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .project-text {
-            width: 60%;
-        }
-        .project-text h3 {
-            font-size: 1.8em;
-            font-weight: 700;
+            font-size: 1.5em;
             margin-bottom: 10px;
         }
-        .project-text p {
-            font-size: 1.2em;
+        .info-box p {
+            margin: 0;
             font-weight: 400;
-            line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-            .project-content {
-                flex-direction: column;
-            }
-            .project-image {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-            .project-text {
-                width: 100%;
-            }
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <div class="projects-section">
-        <div class="project">
-            <h2>Current Project: Prosopagnosia AI Assistance</h2>
-            <div class="project-content">
-                <div class="project-image">
-                    <img src="images/ai_assistance.png" alt="Prosopagnosia AI Assistance">
-                </div>
-                <div class="project-text">
-                    <h3>Concept Development</h3>
-                    <p>Developing an innovative AI-powered device to assist individuals with prosopagnosia (face blindness) as part of the 2025 FAU Wave Competition.</p>
-                    <h3>Technical Implementation</h3>
-                    <p>Utilizing AlexNet neural networks and Raspberry Pi technology to create a reliable facial recognition system.</p>
-                    <h3>Prototype Creation</h3>
-                    <p>Building a user-friendly device and mobile app interface for seamless interaction and improved quality of life for users.</p>
-                </div>
+    <div class="projects-section-1">
+        <h2>Prosopagnosia AI Assistance</h2>
+        <div class="project-boxes">
+            <div class="project-box">
+                <h3>Concept Development</h3>
+                <p>Developing an innovative AI-powered device to assist individuals with prosopagnosia.</p>
+            </div>
+            <div class="project-box">
+                <h3>Technical Implementation</h3>
+                <p>Utilizing neural networks and Raspberry Pi technology for facial recognition.</p>
+            </div>
+            <div class="project-box">
+                <h3>Prototype Creation</h3>
+                <p>Building a user-friendly device and mobile app for seamless interaction.</p>
             </div>
         </div>
-
-        <div class="project">
-            <h2>IMI Supply Chain Analytics Competition</h2>
-            <div class="project-content">
-                <div class="project-image">
-                    <img src="images/supply_chain.png" alt="IMI Supply Chain Analytics Competition">
-                </div>
-                <div class="project-text">
-                    <h3>Leadership</h3>
-                    <p>Led Team 4 and coordinated a successful merger with Team 7, managing communication and collaboration effectively.</p>
-                    <h3>Analysis</h3>
-                    <p>Analyzed real-world case, focusing on optimizing order quantities and timing across three locations.</p>
-                    <h3>Innovation</h3>
-                    <p>Developed a visualization tool to predict supply needs and aid managers in making data-driven decisions.</p>
-                    <h3>Achievement</h3>
-                    <p>Won 2nd place amongst 18 teams, demonstrating strong analytical and problem-solving skills.</p>
-                </div>
-            </div>
+    </div>
+    <div class="projects-section-2">
+        <h2>IMI Supply Chain Analytics Competition</h2>
+        <p>Led Team 4 and coordinated a successful merger with Team 7, managing communication and collaboration effectively. Analyzed real-world cases, developed visualization tools, and focused on optimizing order quantities across locations. Won 2nd place amongst 18 teams, demonstrating strong analytical skills.</p>
+    </div>
+    <div class="projects-section-3">
+        <div class="placeholder-images">
+            <!-- Placeholder for images above the points -->
         </div>
-
-        <div class="project">
-            <h2>Social Media Analytics Volunteer</h2>
-            <div class="project-content">
-                <div class="project-image">
-                    <img src="images/social_media.png" alt="Social Media Analytics Volunteer">
-                </div>
-                <div class="project-text">
-                    <h3>Performance Analysis</h3>
-                    <p>Analyzed social media metrics and presented actionable insights to improve engagement and visibility.</p>
-                    <h3>Strategy Implementation</h3>
-                    <p>Developed and executed data-driven strategies to optimize content and increase audience interaction.</p>
-                    <h3>Platform Growth</h3>
-                    <p>Created and maintained social media platforms, significantly increasing the company's online presence.</p>
-                </div>
+        <div class="info-boxes">
+            <div class="info-box">
+                <h3>Performance Analysis</h3>
+                <p>Analyzed social media metrics to present actionable insights and improve engagement.</p>
+            </div>
+            <div class="info-box">
+                <h3>Strategy Implementation</h3>
+                <p>Developed and executed data-driven strategies to optimize content and increase interaction.</p>
+            </div>
+            <div class="info-box">
+                <h3>Platform Growth</h3>
+                <p>Created and maintained social media platforms, increasing the company's online presence.</p>
             </div>
         </div>
     </div>
