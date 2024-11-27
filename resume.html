@@ -77,28 +77,32 @@
             width: 100%;
             border-radius: 10px;
         }
-        .professional-experience-content {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            flex-direction: column;
-        }
-        .experience-image {
-            width: 100%;
-        }
-        .experience-image img {
-            width: 100%;
+        .professional-experience {
+            position: relative;
+            background-image: url('images/workworkwork.png');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 40px;
             border-radius: 10px;
+            width: 90%;
+            max-width: 1000px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .professional-experience h2 {
+            color: #ffffff;
+            font-size: 2.5em;
+            text-align: left;
+            margin-bottom: 40px;
         }
         .experience-bubble {
-            width: 90%;
-            max-width: 600px;
-            padding: 20px;
             background: rgba(0, 0, 0, 0.7);
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            margin: 20px auto;
             border-radius: 10px;
-            margin: 20px 0;
             color: #ffffff;
-            text-align: left;
         }
         .experience-bubble h3 {
             margin: 0;
@@ -153,24 +157,19 @@
         </div>
 
         <!-- Section 3: Professional Experience -->
-        <div class="section professional-experience">
+        <div class="professional-experience">
             <h2>Professional Experience</h2>
-            <div class="professional-experience-content">
-                <div class="experience-image">
-                    <img src="images/workworkwork.png" alt="Professional Experience Image">
-                </div>
-                <div class="experience-bubble">
-                    <h3>TIDE DRY CLEANERS</h3>
-                    <p>Developed strong customer service skills and attention to detail.</p>
-                </div>
-                <div class="experience-bubble">
-                    <h3>NORDSTROM WAREHOUSE</h3>
-                    <p>Gained experience in inventory management and logistics operations.</p>
-                </div>
-                <div class="experience-bubble">
-                    <h3>PIESANOES PIZZA</h3>
-                    <p>Honed multitasking abilities and fast-paced work environment adaptability.</p>
-                </div>
+            <div class="experience-bubble">
+                <h3>TIDE DRY CLEANERS</h3>
+                <p>Developed strong customer service skills and attention to detail.</p>
+            </div>
+            <div class="experience-bubble">
+                <h3>NORDSTROM WAREHOUSE</h3>
+                <p>Gained experience in inventory management and logistics operations.</p>
+            </div>
+            <div class="experience-bubble">
+                <h3>PIESANOES PIZZA</h3>
+                <p>Honed multitasking abilities and fast-paced work environment adaptability.</p>
             </div>
         </div>
     </div>
