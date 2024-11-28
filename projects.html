@@ -45,30 +45,9 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
             min-height: 600px;
-            position: relative;
-        }
-        .section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
-            opacity: 0.8;
-            border-radius: 10px;
-            z-index: -1;
-        }
-        .section:nth-child(1)::before {
-            background-image: url('images/aibackground.webp');
-        }
-        .section:nth-child(2)::before {
-            background-image: url('images/supplychain.png');
-        }
-        .section:nth-child(3)::before {
-            background-image: url('images/socialmedia.png');
+            background-attachment: fixed;
         }
         .section h2 {
             margin-top: 0;
@@ -93,13 +72,6 @@
             width: calc(33.33% - 20px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-        }
-        .projects-section-2-content {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 75%;
-            color: #ffffff;
         }
         .info-boxes {
             display: flex;
@@ -136,7 +108,7 @@
     </div>
     <div class="projects-section">
         <!-- Section 1: Prosopagnosia AI Assistance -->
-        <div class="section">
+        <div class="section" style="background-image: url('images/aibackground.webp');">
             <h2>Prosopagnosia AI Assistance</h2>
             <div class="project-boxes">
                 <div class="project-box">
@@ -155,13 +127,13 @@
         </div>
 
         <!-- Section 2: IMI Supply Chain Analytics Competition -->
-        <div class="section">
+        <div class="section" style="background-image: url('images/supplychain.png');">
             <h2>IMI Supply Chain Analytics Competition</h2>
             <p>Led Team 4 and coordinated a successful merger with Team 7, managing communication and collaboration effectively. Analyzed real-world cases, developed visualization tools, and focused on optimizing order quantities across locations. Won 2nd place amongst 18 teams, demonstrating strong analytical skills.</p>
         </div>
 
         <!-- Section 3: Social Media Analytics Volunteer -->
-        <div class="section">
+        <div class="section" style="background-image: url('images/socialmedia.png');">
             <h2>Social Media Analytics Volunteer</h2>
             <div class="info-boxes">
                 <div class="info-box">
