@@ -7,4 +7,4 @@ Links
 
 [Pitch Deck: Prosopagnosia](https://docs.google.com/presentation/d/13b3HuJA-l8S8Ec8PVBkPB4EG318D81-Q5-aJq4M4SpE/edit?usp=sharing)
 
-[My video: NOT UP]()
+[My video](https://youtu.be/0mkWXTReMCc)
