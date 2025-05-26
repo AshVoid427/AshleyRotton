@@ -48,7 +48,7 @@
             width: 90%;
             max-width: 1500px;
             margin-bottom: 40px;
-            padding: 40px;
+            padding: 40px 20px 80px 20px; /* top, right, bottom, left */
             background: rgba(0, 0, 0, 0.06);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
@@ -56,17 +56,20 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-          .project-boxes {
+
+         .project-boxes {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 60px; /* gives more space at the bottom */
         }
-
+        
         .project-box {
-            position: relative;
             width: 300px;
-            height: 400px;
+            height: 600px;
             background-size: cover;
             background-position: center;
             border-radius: 12px;
