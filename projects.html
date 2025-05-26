@@ -56,31 +56,40 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        .project-boxes {
+          .project-boxes {
             display: flex;
-            gap: 20px;
-            max-width: 1500px;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: stretch;
+            gap: 20px;
         }
+
         .project-box {
-            color: #ffffff;
-            width: calc(33.33% - 20px);
-            min-height: 400px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+            position: relative;
+            width: 300px;
+            height: 400px;
             background-size: cover;
             background-position: center;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
+        
         .project-box:hover {
             transform: scale(1.03);
         }
+        
+        .project-box div {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: left;
+            border-radius: 0 0 12px 12px;
+        }
+
         .info-boxes {
             display: flex;
             flex-direction: column;
@@ -139,48 +148,49 @@
             <div class="prosopagnosia-content">
                 <h2>Prosopagnosia AI Assistance</h2>
                 <div class="project-boxes">
-
-                    <!-- FAU Newsdesk Feature -->
-                    <a href="https://www.fau.edu/newsdesk/articles/2025-innovation-awards.php" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="project-box" style="background-image: url('images/FAUMention.png');">
-                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-                                <h3>📢 FAU Newsdesk Feature</h3>
-                                <p>Official announcement highlighting FamiliarU’s win.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Jason Hallstrom LinkedIn Post -->
-                    <a href="https://www.linkedin.com/posts/jason-hallstrom-0b06061aa_a-big-congratulations-to-ashley-rotton-who-activity-7318399829905137666-PuK3" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="project-box" style="background-image: url('images/FAULinkedInMention.png');">
-                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-                                <h3>🎉 LinkedIn Recognition</h3>
-                                <p>Jason Hallstrom congratulates Ashley Rotton on her 1st place award.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Winners Table Screenshot -->
-                    <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="project-box" style="background-image: url('images/MentorsMention.png');">
-                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-                                <h3>🏆 Official Winners List</h3>
-                                <p>FamiliarU awarded 1st place and $2,000 Innovation Award.</p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Giant Check Ceremony Photo -->
-                    <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <div class="project-box" style="background-image: url('images/WinnersPicture.png');">
-                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-                                <h3>📸 Ceremony Photo</h3>
-                                <p>Ashley receiving the $2,000 check for 1st place in the Wave Competition.</p>
-                            </div>
-                        </div>
-                    </a>
-
+                
+                  <!-- Newsdesk -->
+                  <a href="https://www.fau.edu/newsdesk/articles/2025-innovation-awards.php" target="_blank">
+                    <div class="project-box" style="background-image: url('images/FAUMention.png');">
+                      <div>
+                        <h3>📢 Newsdesk Feature</h3>
+                        <p>Official announcement highlighting FamiliarU’s win.</p>
+                      </div>
+                    </div>
+                  </a>
+                
+                  <!-- LinkedIn Post -->
+                  <a href="https://www.linkedin.com/posts/jason-hallstrom-0b06061aa_a-big-congratulations-to-ashley-rotton-who-activity-7318399829905137666-PuK3" target="_blank">
+                    <div class="project-box" style="background-image: url('images/FAULinkedInMention.png');">
+                      <div>
+                        <h3>🎉 LinkedIn Recognition</h3>
+                        <p>Jason Hallstrom congratulates Ashley Rotton on her 1st place award.</p>
+                      </div>
+                    </div>
+                  </a>
+                
+                  <!-- Winner Table -->
+                  <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank">
+                    <div class="project-box" style="background-image: url('images/MentorsMention.png');">
+                      <div>
+                        <h3>🏆 Winners List</h3>
+                        <p>FamiliarU listed as 1st place, winning $2,000 for innovation.</p>
+                      </div>
+                    </div>
+                  </a>
+                
+                  <!-- Ceremony Photo -->
+                  <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank">
+                    <div class="project-box" style="background-image: url('images/WinnersPicture.png');">
+                      <div>
+                        <h3>📸 Ceremony Photo</h3>
+                        <p>Ashley receives the award for FamiliarU.</p>
+                      </div>
+                    </div>
+                  </a>
+                
                 </div>
+
             </div>
         </div>
 
