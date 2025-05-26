@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-23L1GTZEF9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-23L1GTZEF9');
     </script>
     <meta charset="UTF-8">
@@ -17,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Montserrat', 'Titillium Web';
+            font-family: 'Montserrat', 'Titillium Web', sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('images/gradient background.png');
@@ -53,12 +52,10 @@
             background: rgba(0, 0, 0, 0.06);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
-            min-height: 600px;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        
         .project-boxes {
             display: flex;
             gap: 20px;
@@ -68,17 +65,21 @@
             align-items: stretch;
         }
         .project-box {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px;
             color: #ffffff;
             width: calc(33.33% - 20px);
-            height: 500px;
+            min-height: 400px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-end;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+        .project-box:hover {
+            transform: scale(1.03);
         }
         .info-boxes {
             display: flex;
@@ -97,10 +98,9 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .info-box h3 {
-            margin: 0;
+            margin: 0 0 10px 0;
             font-weight: 700;
             font-size: 1.5em;
-            margin-bottom: 10px;
         }
         .info-box p {
             margin: 0;
@@ -114,11 +114,10 @@
         }
         .prosopagnosia-content {
             max-width: 75%;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             text-align: center;
         }
-      .social-media-content {
+        .social-media-content {
             max-width: 75%;
             margin-left: auto;
             margin-right: 0;
@@ -132,55 +131,56 @@
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
     </div>
+
     <div class="projects-section">
+
         <!-- Section 1: Prosopagnosia AI Assistance -->
         <div class="section" style="background-image: url('images/aibackground.webp');">
             <div class="prosopagnosia-content">
                 <h2>Prosopagnosia AI Assistance</h2>
                 <div class="project-boxes">
- <!-- Card 1: Newsdesk Post -->
-  <a href="https://www.fau.edu/newsdesk/articles/2025-innovation-awards.php" target="_blank" style="text-decoration: none; color: inherit;">
-    <div class="project-box" style="background: url('Screenshot2025-05-25 215418.png') center/cover no-repeat;">
-      <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-        <h3>📢 Newsdesk Feature</h3>
-        <p>FAU officially highlights the Wave winners and FamiliarU’s award.</p>
-      </div>
-    </div>
-  </a>
 
-  <!-- Card 2: LinkedIn Recognition -->
-  <a href="https://www.linkedin.com/posts/jason-hallstrom-0b06061aa_a-big-congratulations-to-ashley-rotton-who-activity-7318399829905137666-PuK3" target="_blank" style="text-decoration: none; color: inherit;">
-    <div class="project-box" style="background: url('Screenshot%2025-05-25%215159.png') center/cover no-repeat;">
-      <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-        <h3>🎉 LinkedIn Congratulations</h3>
-        <p>Dr. Hallstrom recognizes Ashley Rotton’s 1st place win for FamiliarU.</p>
-      </div>
-    </div>
-  </a>
+                    <!-- FAU Newsdesk Feature -->
+                    <a href="https://www.fau.edu/newsdesk/articles/2025-innovation-awards.php" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="project-box" style="background-image: url('images/FAUMention.png');">
+                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
+                                <h3>📢 FAU Newsdesk Feature</h3>
+                                <p>Official announcement highlighting FamiliarU’s win.</p>
+                            </div>
+                        </div>
+                    </a>
 
-  <!-- Card 3: FAU Official Winner Table -->
-  <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank" style="text-decoration: none; color: inherit;">
-    <div class="project-box" style="background: url('Screenshot%2025-05-25%215532.png') center/cover no-repeat;">
-      <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-        <h3>🏆 Official Winners List</h3>
-        <p>FamiliarU awarded 1st place and $2,000 Dr. Eric H. Shaw Excellence in Innovation Award.</p>
-      </div>
-    </div>
-  </a>
+                    <!-- Jason Hallstrom LinkedIn Post -->
+                    <a href="https://www.linkedin.com/posts/jason-hallstrom-0b06061aa_a-big-congratulations-to-ashley-rotton-who-activity-7318399829905137666-PuK3" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="project-box" style="background-image: url('images/FAULinkedInMention.png');">
+                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
+                                <h3>🎉 LinkedIn Recognition</h3>
+                                <p>Jason Hallstrom congratulates Ashley Rotton on her 1st place award.</p>
+                            </div>
+                        </div>
+                    </a>
 
-  <!-- Card 4: Giant Check Photo -->
-  <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank" style="text-decoration: none; color: inherit;">
-    <div class="project-box" style="background: url('IMG_20250416_181643.jpg') center/cover no-repeat;">
-      <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
-        <h3>📸 Award Ceremony Photo</h3>
-        <p>Ashley Rotton receives the 1st place FAU Wave check for FamiliarU.</p>
-      </div>
-    </div>
-  </a>
+                    <!-- Winners Table Screenshot -->
+                    <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="project-box" style="background-image: url('images/MentorsMention.png');">
+                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
+                                <h3>🏆 Official Winners List</h3>
+                                <p>FamiliarU awarded 1st place and $2,000 Innovation Award.</p>
+                            </div>
+                        </div>
+                    </a>
 
-</div>
+                    <!-- Giant Check Ceremony Photo -->
+                    <a href="https://www.fau.edu/innovation-and-business-development/fau-wave/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <div class="project-box" style="background-image: url('images/WinnersPicture.png');">
+                            <div style="background-color: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px;">
+                                <h3>📸 Ceremony Photo</h3>
+                                <p>Ashley receiving the $2,000 check for 1st place in the Wave Competition.</p>
+                            </div>
+                        </div>
+                    </a>
 
-
+                </div>
             </div>
         </div>
 
@@ -189,9 +189,9 @@
             <div class="imi-supply-chain-content">
                 <h2>IMI Supply Chain Analytics Competition</h2>
                 <ul>
-            <li>Led Team 4 and coordinated a successful merger with Team 7, managing communication and collaboration effectively.</li>
-            <li>Analyzed real-world cases, developed visualization tools, and focused on optimizing order quantities across locations.</li>
-            <li>Won 2nd place amongst 18 teams, demonstrating strong analytical skills.</li>
+                    <li>Led Team 4 and coordinated a successful merger with Team 7, managing communication and collaboration effectively.</li>
+                    <li>Analyzed real-world cases, developed visualization tools, and focused on optimizing order quantities across locations.</li>
+                    <li>Won 2nd place amongst 18 teams, demonstrating strong analytical skills.</li>
                 </ul>
             </div>
         </div>
